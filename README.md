@@ -1,5 +1,5 @@
 # HighlightText
-`React` component that search and change all occurrences in a text to bold applying `<stong>` html tag to each occurence.
+`React` component that makes bold all occurrences of highlight text. It apply `<stong>` html tag to each occurrence.
 
 ## Install
 ```node

@@ -1,6 +1,6 @@
 {
   "name": "@ivanlhz/react-highlight-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [
@@ -51,7 +51,7 @@
     "react-dom": ">=16.13.1"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
