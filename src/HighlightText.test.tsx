@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from '@testing-library/react';
 
-import HighlightText from './'
+import {HighlightText} from './'
 
 describe('Test HiglighText component', () => {
   test('Should render with the props', () => {

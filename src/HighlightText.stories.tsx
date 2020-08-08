@@ -1,5 +1,5 @@
 import React from 'react';
-import HighlightText from './index';
+import {HighlightText} from './index';
 
 export default {
   title: 'HighlightText Component'

@@ -10,4 +10,4 @@ const HighlightText: FC<HighlightTextProps> = ({ text, hightlight }) => {
   );
 };
 
-export default HighlightText;
+export {HighlightText};
