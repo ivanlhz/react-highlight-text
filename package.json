@@ -1,5 +1,5 @@
 {
-  "name": "react-highlight-text",
+  "name": "@ivanlhz/react-highlight-text",
   "version": "1.0.0",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -22,12 +22,9 @@
     "searchtext",
     "matchtext"
   ],
-  "author": {
-    "email": "ivanlhz@gmail.com",
-    "name": "Iván López Hdez"
-  },
+  "author": "Iván López Hdez <ivanlhz@gmail.com>",
   "license": "MIT",
-  "description": "",
+  "description": "`React` component that search and change all occurrences in a text to bold applying `<stong>` html tag to each occurence.",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@rollup/plugin-commonjs": "^14.0.0",
@@ -53,5 +50,15 @@
     "react": ">=16.13.1",
     "react-dom": ">=16.13.1"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanlhz/react-highlight-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ivanlhz/react-highlight-text/issues"
+  },
+  "homepage": "https://github.com/ivanlhz/react-highlight-text#readme"
 }
