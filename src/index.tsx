@@ -3,27 +3,19 @@ import { HighlightTextProps } from './HighlightText.types';
 
 const baseComponentHighlight = (text: string, highlight: string) => (
   <React.Fragment key={Math.random()}>
-    {text}<strong>{highlight}</strong>
+    {text}
+    <strong>{highlight}</strong>
   </React.Fragment>
 );
 
-const baseComponent = (text: string) => (
-  <React.Fragment key={Math.random()}>
-    {text}
-  </React.Fragment>
-);
+const baseComponent = (text: string) => <React.Fragment key={Math.random()}>{text}</React.Fragment>;
 
 const HighlightText: FC<HighlightTextProps> = ({ text, highlight }) => {
   const getComponents = (text: string, highlight: string): JSX.Element[] => {
     const splittedText = text.split(highlight);
-    let toReturn: JSX.Element[] = [];
-    splittedText.forEach((textFragment, index) => {
-      if(index < splittedText.length-1) {
-        toReturn.push(baseComponentHighlight(textFragment, highlight))
-      } else {
-        toReturn.push(baseComponent(textFragment))
-      }
-    })
+    let toReturn: JSX.Element[] = splittedText.map((textFragment, index) =>
+      index < splittedText.length - 1 ? baseComponentHighlight(textFragment, highlight) : baseComponent(textFragment)
+    );
     return toReturn;
   };
 
