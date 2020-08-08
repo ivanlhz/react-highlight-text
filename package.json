@@ -1,0 +1,56 @@
+{
+  "name": "react-highlight-text",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "storybook": "start-storybook -p 6006",
+    "storybook:export": "build-storybook"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "text",
+    "highlight",
+    "bold",
+    "searchtext",
+    "matchtext"
+  ],
+  "author": {
+    "email": "ivanlhz@gmail.com",
+    "name": "Iván López Hdez"
+  },
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@storybook/react": "^5.3.19",
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.8",
+    "@types/jest": "^26.0.9",
+    "@types/react": "^16.9.44",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.2.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rollup": "^2.23.1",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-typescript2": "^0.27.2",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "react": ">=16.13.1",
+    "react-dom": ">=16.13.1"
+  }
+}

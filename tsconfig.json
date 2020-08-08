@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es5",    
+    "module": "ESNext",
+    "lib": ["ES6","DOM", "ES2017","eS2018"],
+    "jsx": "react",                    
+    "declaration": true,                   
+    "declarationDir": "build",
+    "sourceMap": true,                    
+    "removeComments": true,
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "strictNullChecks": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node", 
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "src/**/*.stories.tsx",
+    "src/**/*.test.tsx"
+  ]
+}
