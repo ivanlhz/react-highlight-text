@@ -1,4 +1,4 @@
 export type HighlightTextProps = {
   text: string;
-  hightlight: string;
+  highlight: string;
 }
