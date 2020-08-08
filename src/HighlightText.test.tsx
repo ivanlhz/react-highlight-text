@@ -10,14 +10,13 @@ describe('Test HiglighText component', () => {
     expect(getByText(/world/g)).toBeInTheDocument();
   })
   test('Should found multiple words or letters', () => {
-    const {getByText, getAllByText} = render(<HighlightText text="hello world" highlight="o" />)
+    const {getByText} = render(<HighlightText text="hello world" highlight="o" />)
     expect(getByText(/hell/g)).toBeInTheDocument();
     expect(getByText(/w/g)).toBeInTheDocument();
     expect(() => getByText(/hello/g)).toThrowError();
   })
   test('Should not contain the highlight letter at the end of the text', () => {
-    const {getAllByText, debug} = render(<HighlightText text="hello world" highlight="o" />)
-    debug()
+    const {getAllByText} = render(<HighlightText text="hello world" highlight="o" />)
     expect(getAllByText(/^o/).length).toBe(2)
   })
 });
