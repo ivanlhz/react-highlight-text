@@ -11,7 +11,9 @@
     "test": "jest --watch",
     "test:coverage": "jest --coverage",
     "storybook": "start-storybook -p 6006",
-    "storybook:export": "build-storybook"
+    "storybook:export": "build-storybook",
+    "make-badges": "node_modules/.bin/jest-badges-readme",
+    "make-readme": "npm run test:coverage && npm run make-badges"   
   },
   "keywords": [
     "react",
@@ -27,6 +29,7 @@
   "description": "`React` component that search and change all occurrences in a text to bold applying `<stong>` html tag to each occurence.",
   "devDependencies": {
     "@babel/core": "^7.11.1",
+    "@olavoparno/jest-badges-readme": "^1.5.1",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@storybook/react": "^5.3.19",
@@ -51,7 +54,7 @@
     "react-dom": ">=16.13.1"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
